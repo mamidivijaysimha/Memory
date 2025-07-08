@@ -12,7 +12,7 @@ import java.util.*;
 
 @RestController
 @RequestMapping("/api/memories")
-@CrossOrigin(origins = "http://localhost:5173", allowCredentials = "true")
+@CrossOrigin(origins = "https://silver-crepe-177b8f.netlify.app", allowCredentials = "true")
 public class MemoryController {
 
     private final MemoryRepository memoryRepo;
