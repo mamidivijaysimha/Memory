@@ -21,8 +21,15 @@ public class MemoryController {
         this.memoryRepo = memoryRepo;
     }
 
+    @GetMapping("\test)
+    public ResponseEntity<?> test()
+    {
+        return ResponseEntity.status(200).body("test success");
+    }
+    
     @GetMapping
-    public List<Memory> getAll() {
+    public List<Memory> getAll() 
+    {
         return memoryRepo.findAll();
     }
 
