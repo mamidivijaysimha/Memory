@@ -20,12 +20,6 @@ public class MemoryController {
     public MemoryController(MemoryRepository memoryRepo) {
         this.memoryRepo = memoryRepo;
     }
-
-    @GetMapping("\test)
-    public ResponseEntity<?> test()
-    {
-        return ResponseEntity.status(200).body("test success");
-    }
     
     @GetMapping
     public List<Memory> getAll() 
